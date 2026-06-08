@@ -23,7 +23,7 @@ def highlight_top_ranks(results_df):
     styler = results_df.style
     for col in cols_to_check:
         if col in results_df.columns:
-            styler = styler.applymap(
+            styler = styler.map(
                 lambda val: color_cell(val, col), subset=[col]
             )
     return styler
