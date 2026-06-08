@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from model4 import get_foul_targets, get_matchups, d1_df
+from model import get_foul_targets, get_matchups, d1_df
 
 teams = sorted(d1_df['TEAM'].unique().tolist())
 
